@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Travel Agent Home Page</title>
+  </head>
+
+  <body id="home">
+    <header id="header">
+      <!-- Navigation Section -->
+      <nav>
+        <img src="assets/f.png" alt="Logo" />
+        <ul id="myLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#package">Our Package</a></li>
+          <li><a href="#contact">Call Us</a></li>
+        </ul>
+        <a href="javascript:void(0);" id="hamburger-icon">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+      <!-- Navigation Section End -->
+
+      <!-- Slogan Section -->
+      <section>
+        <h1>Your Trusted Travel Agent's</h1>
+        <p>Your Happines is our happines</p>
+      </section>
+      <!-- Slogan Section End -->
+    </header>
+
+    <main>
+      <div class="container">
+        <article id="testimonial-article">
+          <!-- Autoslider Image -->
+          <figure class="container-slider fade">
+            <img src="assets/bali.jpg" alt="Bali" />
+          </figure>
+
+          <figure class="container-slider fade">
+            <img src="assets/japan.jpg" alt="Japan" />
+          </figure>
+
+          <figure class="container-slider fade">
+            <img src="assets/singapore.jpg" alt="Singapore" />
+          </figure>
+
+          <figure class="container-slider fade">
+            <img src="assets/bandung.jpg" alt="Bandung" />
+          </figure>
+
+          <figure class="container-slider fade">
+            <img src="assets/surabaya.jpg" alt="Surabaya" />
+          </figure>
+
+          <figure class="container-slider fade">
+            <img src="assets/lampung.jpg" alt="Lampung" />
+          </figure>
+          <!-- Autoslider Image End -->
+
+          <div class="testimoni-profile">
+            <p><q>Liburanku jadi menyenangkan bersama Travel Agentku.</q></p>
+
+            <div class="user-profile">
+              <div class="profile-img">
+                <img src="assets/profile.png" alt="Profile Picture" />
+              </div>
+              <div class="user-description">
+                <p class="username">Florence Hughes</p>
+                <p class="userjob">Ibu Rumah Tangga, 28</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Benefit Section -->
+          <section class="benefit-wrapper">
+            <h2>What Will You Get?</h2>
+            <div class="benefit-container">
+              <div class="benefit-icon">
+                <img src="assets/number-1.png" alt="Number 1" />
+              </div>
+              <div>
+                <h4>Pengetahuan dan Pengalaman Mendalam</h4>
+                <p>
+                  Kami adalah tim profesional dengan pengetahuan mendalam tentang berbagai destinasi wisata di seluruh dunia. Pengalaman bertahun-tahun dalam industri perjalanan memberikan kami keahlian untuk merencanakan perjalanan yang
+                  sesuai dengan preferensi dan anggaran Anda. Dengan kami, Anda dapat menghindari kesulitan merencanakan perjalanan sendiri dan merasa yakin bahwa setiap rincian akan diatur dengan sempurna.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit-container">
+              <div class="benefit-icon">
+                <img src="assets/number-2.png" alt="Number 2" />
+              </div>
+              <div>
+                <h4>Paket Wisata yang Didesain Khusus</h4>
+                <p>
+                  Kami mengerti bahwa setiap pelancong memiliki kebutuhan unik. Oleh karena itu, kami menawarkan paket wisata yang dapat disesuaikan dengan keinginan dan preferensi Anda. Tak peduli apakah Anda mencari petualangan ekstrem,
+                  bersantai di pantai, atau menjelajahi keajaiban budaya, kami akan menciptakan perjalanan impian Anda dengan penuh dedikasi.
+                </p>
+              </div>
+            </div>
+
+            <div class="benefit-container">
+              <div class="benefit-icon">
+                <img src="assets/number-3.png" alt="Number 3" />
+              </div>
+              <div>
+                <h4>Akses ke Penawaran Eksklusif</h4>
+                <p>
+                  Sebagai agen perjalanan terpercaya, kami memiliki akses ke penawaran eksklusif dan tarif istimewa yang tidak dapat Anda temukan secara online. Kami akan membantu Anda mendapatkan nilai terbaik untuk setiap dolar yang Anda
+                  keluarkan, sambil memastikan kualitas layanan tetap tinggi.
+                </p>
+              </div>
+            </div>
+          </section>
+          <!-- Benefit Section End -->
+        </article>
+
+        <aside id="contact">
+          <!-- Aside Header -->
+          <header>
+            <h2>Contact Us</h2>
+            <p>Sales akan menghubungi anda 1x24 Jam setelah data kami terima.</p>
+            <div id="status-message"></div>
+          </header>
+          <!-- Aside Header End -->
+
+          <form action="" method="post" id="contact-form" name="contact-form">
+            <div class="label-input">
+              <label for="name">Your Name:</label>
+              <input type="text" name="name" id="name" placeholder="First and last name" />
+            </div>
+
+            <div class="label-input">
+              <label for="email">Email Address:</label>
+              <input type="email" name="email" id="email" placeholder="example@email.com" />
+            </div>
+
+            <div class="label-input">
+              <label for="destination">What are you interested in?</label>
+              <input list="place" name="destination" placeholder="Select Option" id="destination" />
+              <datalist id="place">
+                <option value="Bali"></option>
+                <option value="Japan"></option>
+                <option value="Singapore"></option>
+                <option value="Bandung"></option>
+                <option value="Surabaya"></option>
+                <option value="Lampung"></option>
+              </datalist>
+            </div>
+
+            <button type="submit" id="submit-btn">SEND</button>
+          </form>
+        </aside>
+      </div>
+    </main>
+
+    <article id="package">
+      <!-- Header in package article -->
+      <header>
+        <h2>Our Package</h2>
+      </header>
+      <!-- Header in package article end -->
+
+      <section class="destination-wrapper">
+        <!-- Container Row 1 -->
+        <div class="container-row">
+          <div class="destination-card">
+            <img src="assets/placeholder-red.png" alt="Placeholder Icon" class="icon" />
+            <div class="description">
+              <h4>Bali</h4>
+              <p>Travel dan wisata di Bali. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <img src="assets/placeholder-red.png" alt="Placeholder Icon" class="icon" />
+            <div class="description">
+              <h4>Japan</h4>
+              <p>Travel dan wisata di Japan. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <img src="assets/placeholder-red.png" alt="Placeholder Icon" class="icon" />
+            <div class="description">
+              <h4>Singapore</h4>
+              <p>Travel dan wisata di Singapore. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Container Row 1 End -->
+
+        <!-- Container Row 2 -->
+        <div class="container-row">
+          <div class="destination-card">
+            <img src="assets/placeholder-blue.png" alt="Placeholder Icon" class="icon" />
+            <div class="description">
+              <h4>Bandung</h4>
+              <p>Travel dan wisata di Bandung. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <img src="assets/placeholder-blue.png" alt="Placeholder Icon" class="icon" />
+            <div class="description">
+              <h4>Surabaya</h4>
+              <p>Travel dan wisata di Surabaya. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <img src="assets/placeholder-blue.png" alt="Placeholder Icon" class="icon" />
+            <div class="description">
+              <h4>Lampung</h4>
+              <p>Travel dan wisata di Lampung. Kunjungi cagar budaya dan kuliner yang menarik.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Container Row 2 End -->
+      </section>
+    </article>
+
+    <article id="closing">
+      <h2>Bergabunglah dengan Kami untuk Memulai Petualangan Tak Terlupakan!</h2>
+      <p>Jadi, tunggu apa lagi? Hubungi kami sekarang dan mari kita mulai petualangan luar biasa bersama-sama!</p>
+      <a href="#contact">CONTACT US</a>
+    </article>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-media">
+          <a href="#" target="_blank"><img src="assets/facebook.png" alt="Facebook" /></a>
+          <a href="#" target="_blank"><img src="assets/twitter.png" alt="Twitter" /></a>
+          <a href="#" target="_blank"><img src="assets/instagram.png" alt="Instagram" /></a>
+        </div>
+        <p>&copy; 2023 Your Travel Agent. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="js/script.js" type="application/javascript"></script>
+  </body>
+</html>
